@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula Otávio</title>
-   <style>
-    h1{
-        margin-inline-start: 180px;
-        margin-block-end: 50px;
-    }
-    body{
-        background-color: wheat;
-        margin-inline-start: 450px;
-    }
-   </style>
+    <style>
+        #tecno {
+            font-size: arial white;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        h1 {
+            margin-inline-start: 220px;
+            margin-block-end: 30px;
+        }
+
+        body {
+            background-color: wheat;
+            margin-inline-start: 500px;
+        }
+
+        #Mensagem {
+            width: 300px;
+            height: 120px;
+            align-content: flex-start;
+            text-align: left;
+
+        }
+
+        #botao-enviar {
+            width: 308px;
+        }
+
+        button {
+            border: none;
+            border-radius: 15px;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Portifílio</h1>
-    
-    <div id="aa">
+
+    <div id="pagina">
         <h3>Quem sou eu ?</h3>
         <p>Me chamo Danilo, tenho 18 anos e estou cursando Ciência da Computação na UVV.</p>
-        
-        <h3>Meus conhecimentos:</h3>
-        <p1>Comecei a estudar programação com JavaScript em Dezembro de 2023,<br> logo após concluir o ensino médio, pois já havia decidido que iria querer<br> começar minha carreira no front-end.
-        Ao começar as aulas do curso<br> na UVV eu senti a necessidade de aprender mais de html e um pouco de<br> css ( sou um pouco perfeccionista ) para não ficar tão perdido enquanto<br> eu estudo e para aprender integrações entre essas linguagens da web.</p1>
+
+        <h3>Sobre mim:</h3>
+        <p1>Comecei a estudar programação com JavaScript em Dezembro de 2023,<br> logo após concluir o ensino médio,
+            pois já havia decidido que iria querer<br> começar minha carreira no front-end.
+            Ao começar as aulas do curso<br> na UVV eu senti a necessidade de aprender mais de html e um pouco de<br>
+            css ( sou um pouco perfeccionista ) para não ficar tão perdido enquanto<br> eu estudo e para aprender
+            integrações entre essas linguagens da web.</p1>
+
+        <h3>Minhas Tecnologias</H3>
+        <div id="tecno">
+            Html
+            CSS
+            JavaScript
+        </div>
+
+        <div id="icones">
+            <img src="icone_html.png" alt="icone html">
+            <img src="icone_css.png" alt="icone css">
+            <img src="icone_js.png" alt="icone js">
+        </div>
+        <!--Adicionar icones das linguagens-->
+
         <h3>Gostos Pessoais:</h3>
         <ul>
             <li>Jogar altinha</li>
@@ -34,17 +85,63 @@
             <li>Jogar Valorant</li>
             <li>Cachorros</li>
         </ul>
+
+        <h3>Linguas Faladas</h3>
+        <table>
+            <thead>
+                <th>Idioma</th>
+                <th>Proefinciência</th>
+                <th>Local Onde Aprendi</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Inglês</td>
+                    <td>Intermediário</td>
+                    <td>Cursinho</td>
+                </tr>
+                <tr>
+                    <td>Português</td>
+                    <td>Fluente</td>
+                    <td>Nativo</td>
+                </tr>
+                <tr>
+                    <td>Português (pt-pt)</td>
+                    <td>Básico</td>
+                    <td>Família</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><b>Buscando desenvolver fluência no Inglês</b></td>
+                </tr>
+            </tfoot>
+        </table>
+
         <h3>Pontos Fortes</h3>
         <ol type="I">
-            <li>Resolver problemas para "quebrar  cabeça"</li>
+            <li>Resolver problemas para "quebrar cabeça"</li>
             <li>Proatividade</li>
             <li>Muito aberto à aprender mais</li>
             <li>Fácil de lidar com pessoas</li>
         </ol>
-        <h3>Contatos</h3>
+
+        <h3>Contato</h3>
+        <form action="#">
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="Digite seu Email"> <button>Enviar</button><br><br>
+
+            <label for="Mensagem">Mande uma mensagem</label><br>
+            <input id="Mensagem" type="text"><br>
+            <button id="botao-enviar">Enviar</button>
+        </form>
+
+        <h3>Redes Sociais</h3>
         <a href="https://github.com/DaniloDev18" target="_blank">Github</a><br>
-        <a href="https://www.instagram.com/daniloaraujo_17/" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/daniloaraujo_17/" target="_blank">Instagram</a><br>
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Email</a>
 
     </div>
-    </body>
+</body>
+
 </html>
